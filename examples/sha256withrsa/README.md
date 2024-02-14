@@ -1,20 +1,7 @@
 This is a example show how to use sha256withrsa
 
 ## Run
-1. Make a file with a name like `test.js` then add this code:
-
-```JavaScript
-import sign from 'k6/x/sign'
-
-const privateKey = open('./private.pem')
-
-export default function () {
-    const clearText = 'Hello World!'
-    console.log(sign.sha256WithRsa(privateKey, clearText))
-}
-```
-
-2. Run the test with ./k6 run test.js.
+1. Run the test with complied k6.
 ```shell
 ./k6 run test.js
 ```
